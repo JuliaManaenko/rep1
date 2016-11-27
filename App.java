@@ -35,7 +35,7 @@ list.add(i, students.get(i).getName() + ' ' + students.get(i).getCourse() + ' ' 
 	
 }
 System.out.println("The default list of students:");
-for(int i=0; i<list.size(); i++){
+for(int i=list.size(); i>=0; i--){
 	System.out.println(list.get(i));
 }
 
@@ -45,6 +45,7 @@ Collections.sort(list);
 System.out.println("\nThe sorting list of students:");
 for(int i=0; i<list.size(); i++){
 	System.out.println(list.get(i));
+	System.out.println("Commited changes");
 }
 }
 }
